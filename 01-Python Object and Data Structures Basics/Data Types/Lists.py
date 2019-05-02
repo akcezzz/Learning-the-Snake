@@ -31,3 +31,7 @@ print(alist + blist)
 #Lists can be added using operators
 clist = alist + blist
 print(clist)
+
+#It is possible to create a nested list and go through it by precising another set of brackets for your nested list
+dlist = [1,2,3,4,[5,6,7]]
+print(dlist[4][1]) #Will display '6'
