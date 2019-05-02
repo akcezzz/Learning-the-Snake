@@ -38,3 +38,43 @@ print(string1[2:-1:2]) #Beginning until the end, misses 1 letter on 2 (The last 
 
 ###REVERSING A STRING
 print(string1[::-1]) #Here we are taking a reverse step, will display "noitalixa"
+
+##Concatenating 2 strings
+
+bstring = 'Akcyl'
+
+myname = 'Axi' + bstring[-1]  #U can concatenate strings using a variable or any other strings
+print(myname)
+
+#Concatenating works with operators as well
+print(myname*3) #Will display myname trice
+
+#Built-in functins can be used on strings as well
+mystring = 'It is beautiful outside'
+
+print(mystring.split()) #Will divide your string everytime the compiler will encounter a space
+print(mystring.split('i')) #Will divide your string everytime the compiler will encounter an 'i'
+
+print(mystring.upper()) #Puts string into capital letters
+
+####   Typing 'variable.' will show you every functions available for your variable   ####
+
+
+#Print formatting#
+
+print('The {} {} {}'.format('stars', 'are', 'magnificent')) #format() function lets you insert strings into a string
+print('The {2} {1} {0}'.format('stars', 'are', 'magnificent')) #Works with indexes as well.
+print('The {a} {b} {c}'.format(a ='stars',b = 'are',c = 'magnificent')) #Works with variable assignments as well
+
+#Print formating with floating points
+#It is possible to format a float number using the notation {value:width.precision}
+r = 123.31232312321
+print('My value is {value:1.3f}'.format(value = r))  #The notation has to be put in the string itself between the curly braces {}
+
+#f-strings formatting
+name = 'Sam'
+age = 23
+print(f'{name} is {age} years old') #Putting an 'f' before the string lets you format it
+
+
+
