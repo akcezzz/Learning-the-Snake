@@ -18,3 +18,14 @@ if hungry:
 else:
     print('REST!')
 
+##The elif statement (same as an else if() in C/C++
+
+age = 19
+
+if age < 18:
+    print('You are underage')
+elif age>=18 and age<=30:
+    print('You are a young adult')
+else:
+    print('You are an adult')
+
